@@ -25,7 +25,7 @@ This project demonstrates how to:
 
 ## Steps Performed
 
-### 1) Build & Tag Docker Image on VM
+### 1) 🧱 Build & Tag Docker Image on VM
 
 ```bash
 docker build -t sampleweb:v1 .
@@ -38,7 +38,7 @@ docker push myacr2040.azurecr.io/sampleweb:v1
 docker images
 ```
 ---
-### 3) Enable Managed Identity on App Service
+### 3)🔑 Enable Managed Identity on App Service
 
 Portal → App Service → Identity
 System assigned = ON
@@ -63,7 +63,7 @@ Portal → App Service → Deployment Center → Container
 
 ---
 
-### 6) Browse the App
+### 6) 🌍 Browse the App
 
 Collect the Web App URL from Overview:
 App server URL: https://sampleweb-appservice.azurewebsites.net/
@@ -74,19 +74,36 @@ App server URL: https://sampleweb-appservice.azurewebsites.net/
 App Service successfully pulled container from ACR and displayed output in browser.
 
 ---
-## Screenshots Included
+## 📸 Screenshots Included
 
-![docker images output from VM]
+![docker images output from VM](https://github.com/vijaya3121/sample-website-acr-appservice-deploy/blob/main/Docker%20img%20output.png)
 
-ACR repositories page
+![ACR repositories page](https://github.com/vijaya3121/sample-website-acr-appservice-deploy/blob/main/acr%20repositories%20screen.png)
 
-App Service Identity screenshot
+![App Service Identity screenshot](https://github.com/vijaya3121/sample-website-acr-appservice-deploy/blob/main/app%20service%20identity%20screen%20on.png)
 
-IAM showing AcrPull
+![IAM showing AcrPull](https://github.com/vijaya3121/sample-website-acr-appservice-deploy/blob/main/Acr%20pull.png)
 
-Deployment center container configuration
+![Deployment center container configuration](https://github.com/vijaya3121/sample-website-acr-appservice-deploy/blob/main/appservice%20deployment%20centre.png)
 
-Final browser output
+![Final browser output](https://github.com/vijaya3121/sample-website-acr-appservice-deploy/blob/main/browser%20output.png)
+
+---
+
+## Next Improvements
+
+Add GitHub Actions CI/CD pipeline to automate docker push to ACR
+
+Add health checks & logging
+
+Add custom domain from App Service
+
+---
+
+## 👩‍💻 Author
+Vijaya Reddy 
+DevOps & Cloud Enthusiast
+
 
 
 
